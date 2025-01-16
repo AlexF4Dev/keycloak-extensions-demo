@@ -62,5 +62,8 @@ _(This was for long time not possible in Keycloak ootb, thus this event listener
 There's a `docker-compose.yml` definition to use with Docker Compose. No Warranties, use at your own risk and fortune, I'm not giving any support to this!
 
 Build and run all the stuff with:
+```shell
 
-    & ./mvnw clean package -DskipTests && docker compose up
+      mvn wrapper:wrapper -Dmaven=3.9.9
+    ./mvnw clean package -DskipTests && docker compose up
+```
